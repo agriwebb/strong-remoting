@@ -326,7 +326,7 @@ describe('RestAdapter', function() {
       remotes.testClass = extend({}, classConfig);
       var fn = remotes.testClass[name] = extend(function() {}, methodConfig);
 
-      var sharedClass = new SharedClass('testClass', remotes.testClass, true);
+      var sharedClass = new SharedClass('testClass', remotes.testClass);
       var restClass = new RestAdapter.RestClass(sharedClass);
 
       var sharedMethod = new SharedMethod(fn, name, sharedClass, methodConfig);
@@ -490,7 +490,7 @@ describe('RestAdapter', function() {
       var testClass = extend({}, classConfig);
       var fn = testClass[name] = extend(function() {}, methodConfig);
 
-      var sharedClass = new SharedClass('testClass', testClass, true);
+      var sharedClass = new SharedClass('testClass', testClass);
       var restClass = new RestAdapter.RestClass(sharedClass);
       remotes.addClass(sharedClass);
 
