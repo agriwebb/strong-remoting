@@ -32,6 +32,7 @@
     "mux-demux": "^3.7.9",
     "qs": "^6.2.1",
     "request": "^2.55.0",
+    "retry-request": "^7.0.2",
     "sse": "0.0.6",
     "strong-globalize": "^2.6.6",
     "traverse": "^0.6.6",
